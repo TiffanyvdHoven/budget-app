@@ -24,7 +24,7 @@ body {
 }
 
 .right { float: right; }
-.red { color: #FF5049 !important; }
+.red { color: #FF5049 !important;}
 .red-focus:focus { border: 1px solid #FF5049 !important; }
 
 /**********************************************
@@ -32,11 +32,17 @@ body {
 **********************************************/
 
 .top {
-    height: 40vh;
+    height: 70vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(back.png);
     background-size: cover;
     background-position: center;
     position: relative;
+}
+
+@media (min-width: 700px) {
+  .top {
+      height: 60vh;
+  }
 }
 
 .budget {
@@ -186,6 +192,12 @@ body {
     display: block;
     margin: auto;
     width: 70%;
+    margin-top: 10px;
+  }
+
+  .add__btn {
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
 }
